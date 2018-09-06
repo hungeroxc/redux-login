@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch server --exec babel-node -- server/index.js"
+    "start": "nodemon --watch server --exec babel-node -- server/index.js",
+    "build:server": "babel -d ./build ./server -s"
   },
   "keywords": [],
   "author": "",
