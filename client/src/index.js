@@ -22,6 +22,8 @@ import jwtDecode from 'jwt-decode';
 import setAuthorizationToken from './utils/setAuthorizationToken';
 import { setCurrentUser } from './actions/authActions';
 
+import axios from 'axios';
+
 const store = createStore(
   rootReducer,
   composeWithDevTools(
@@ -32,6 +34,10 @@ const store = createStore(
 if (localStorage.jwtToken) {
   setAuthorizationToken(localStorage.jwtToken);
   store.dispatch(setCurrentUser(jwtDecode(localStorage.jwtToken)));
+}
+
+if (process.env.NODE_ENV === 'production') {
+  axios.defaults.baseURL = 'https://redux-login.rails365.net';
 }
 
 ReactDOM.render(

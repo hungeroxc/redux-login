@@ -5,7 +5,11 @@ import users from './routes/users';
 import auth from './routes/auth';
 import events from './routes/events';
 
+import cors from 'cors';
+
 let app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
