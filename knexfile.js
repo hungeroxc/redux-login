@@ -6,7 +6,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'reduxlogin',
-      user:     'hfpp2012',
+      user:     'oxc1',
       password: ''
     },
     pool: {
