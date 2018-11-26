@@ -37,7 +37,7 @@ if (localStorage.jwtToken) {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  axios.defaults.baseURL = 'https://redux-login.rails365.net';
+  axios.defaults.baseURL = 'https://redux.oxc666.xyz';
 }
 
 ReactDOM.render(
