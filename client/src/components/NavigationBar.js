@@ -30,7 +30,7 @@ class NavigationBar extends Component {
     const guestLinks = (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/signup">Sign Up</Link>
+          <Link className="nav-link" to="/signup">dadadaSign Up</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login">Login</Link>
